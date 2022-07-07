@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Splash&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <title>TIC-TAC-TOE</title>
+</head>
+
+<body class="light-mode">
+    <div class="wrapper">
+        <div class="app">
+            <div id="player1" class="player">
+                <div class="player-turn">Your Turn</div>
+                <div class="player-wrapper">
+                    <div class="player-shape">X</div>
+                    <div class="player-score _X_"></div>
+                </div>
+            </div>
+            <div class="board">
+                <div class="case c11" data-line="1" data-col="1"></div>
+                <div class="case c12" data-line="1" data-col="2"></div>
+                <div class="case c13" data-line="1" data-col="3"></div>
+                <div class="case c21" data-line="2" data-col="1"></div>
+                <div class="case c22" data-line="2" data-col="2"></div>
+                <div class="case c23" data-line="2" data-col="3"></div>
+                <div class="case c31" data-line="3" data-col="1"></div>
+                <div class="case c32" data-line="3" data-col="2"></div>
+                <div class="case c33" data-line="3" data-col="3"></div>
+            </div>
+            <div id="player2" class="player">
+                <div class="player-turn">Your Turn</div>
+                <div class="player-wrapper">
+                    <div class="player-shape">O</div>
+                    <div class="player-score _O_"></div>
+                </div>
+            </div>
+            <div class="settings">
+                <div class="clear-board">
+                    <button class="" type="button">clear board</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <canvas id="_canvas" width="282" height="282"></canvas>
+    <div id="credit">
+        Made with LOVE by <a href="https://github.com/yoel3imari"> @yoel3imari </a> / 2022
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
